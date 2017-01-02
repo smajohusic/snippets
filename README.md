@@ -18,6 +18,12 @@ Encode from input to output
 openssl base64 -e <<< ram
 ```
 
+Encode from input to clipboard
+
+```bash
+openssl base64 -e <<< ram | pbcopy
+```
+
 Decode from input to output
 
 ```bash
