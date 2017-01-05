@@ -2,6 +2,14 @@
 
 ## Terminal
 
+### Git
+
+Delete commit and keep changes
+
+```bash
+git reset HEAD^
+```
+
 ### Encode/Decode
 
 #### Base64
