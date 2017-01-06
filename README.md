@@ -10,6 +10,16 @@ Delete commit and keep changes
 git reset HEAD^
 ```
 
+### Files
+
+#### MIME-type
+
+Get the MIME-type of a given file
+
+```bash
+file -b --mime-type image.png
+```
+
 ### Encode/Decode
 
 #### Base64
