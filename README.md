@@ -47,3 +47,15 @@ Decode from input to output
 ```bash
 openssl base64 -d <<< cmFtCg==
 ```
+
+## MySQL
+
+### Generate auto increment integer for id
+
+```mysql
+select name,
+      @rownum := @rownum + 1 as row_number
+from your_table
+  cross join (select @rownum := 0) r
+order by name
+```
